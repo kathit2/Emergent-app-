@@ -232,7 +232,7 @@ const Home = () => {
       <section className="py-20 bg-[#0f1419] fade-in-section">
         <div className="container mx-auto px-6">
           <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center">
-            Tools & <span className="text-[#00D9FF]">Technologies</span>
+            Analytics & <span className="text-[#00D9FF]">Modeling Toolkit</span>
           </h2>
           <div className="flex flex-wrap justify-center gap-4 max-w-4xl mx-auto">
             {mockTools.map((tool, idx) => (
