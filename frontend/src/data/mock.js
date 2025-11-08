@@ -178,7 +178,7 @@ export const mockTools = [
   'Seaborn',
   'NumPy',
   'Google Colab',
-  'Linear Regression',
+  'AI/ML Integration',
   'Statistical Analysis',
   'GPS Analysis',
   'Heart Rate Monitoring',
