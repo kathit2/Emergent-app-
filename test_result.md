@@ -223,13 +223,12 @@ metadata:
 
 test_plan:
   current_focus:
-    - "POST /api/contact - Submit contact message"
-    - "POST /api/contact - Email validation"
-    - "POST /api/contact - Name length validation"
-    - "POST /api/contact - Message length validation"
-    - "GET /api/contact - Retrieve contact messages"
+    - "Contact form UI integration"
+    - "Navigation and hero section"
+    - "Project cards functionality"
+    - "IIT Madras section display"
   stuck_tasks: []
-  test_all: false
+  test_all: true
   test_priority: "high_first"
 
 agent_communication:
