@@ -89,7 +89,7 @@ const Home = () => {
               Kathit Sondhi
             </h1>
             <p className="text-2xl md:text-3xl text-gray-300 mb-4">
-              UKSCA Accredited Strength & Conditioning Coach
+              UKSCA Accredited Strength & Conditioning Trainer
             </p>
             <p className="text-xl md:text-2xl text-[#00D9FF] mb-8">
               Blending Strength & Conditioning with Data-Driven Performance
