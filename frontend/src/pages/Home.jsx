@@ -164,7 +164,7 @@ const Home = () => {
                     Acrophase Human Performance Lab
                   </p>
                   <p className="text-gray-400 leading-relaxed">
-                    Working at the intersection of sports science and data analytics at one of India's premier research institutions. Focusing on human performance optimization through advanced data analysis, athlete monitoring systems, and machine learning applications.
+                    Working at the intersection of sports science and data analytics at one of India's leading research institutions. Dedicated to optimizing human performance through advanced data analysis, athlete monitoring systems, and applied machine learning.
                   </p>
                 </div>
               </div>
