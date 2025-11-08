@@ -163,6 +163,19 @@ async def create_contact_message(contact: ContactMessageCreate):
         
         if result.inserted_id:
             logger.info(f"Contact message received from {contact.email}")
+            
+            # Send email notification
+            email_sent = await send_contact_email(
+                name=contact.name,
+                email=contact.email,
+                message=contact.message
+            )
+            
+            if email_sent:
+                logger.info(f"Email notification sent successfully to {os.environ.get('SMTP_FROM_EMAIL')}")
+            else:
+                logger.warning("Email notification failed, but message saved to database")
+            
             return {
                 "success": True,
                 "message": "Message sent successfully! I'll get back to you soon.",
