@@ -117,7 +117,7 @@ const Home = () => {
               UKSCA Accredited Strength & Conditioning Trainer
             </p>
             <p className="text-xl md:text-2xl text-[#00D9FF] mb-8">
-              Blending Strength & Conditioning with Data-Driven Performance
+              Blending Strength & Conditioning with Data Science
             </p>
             <p className="text-lg text-gray-400 mb-12 max-w-2xl mx-auto">
               Sports Scientist at Acrophase Human Performance Lab, IIT Madras
