@@ -149,7 +149,7 @@ const Home = () => {
             <div className="bg-[#1a1a1a] p-8 rounded-xl border border-gray-800 hover:border-[#00D9FF] transition-all">
               <h3 className="text-2xl font-semibold mb-4 text-[#00D9FF]">Approach</h3>
               <p className="text-gray-300 leading-relaxed">
-                My work bridges the gap between physiology and performance analytics. I create actionable dashboards, analyze GPS and heart rate data, and explore machine learning applications for injury prediction and adaptation modeling, bringing scientific rigor to athletic development.
+                I translate raw athlete data into meaningful insights that drive performance decisions. My work integrates physiology, performance analytics, and data science to create actionable dashboards, interpret GPS and heart-rate metrics, and build machine-learning models for injury risk and adaptation profiling. I focus on converting complex data into clear, coach-ready recommendations that elevate athletic development.
               </p>
             </div>
           </div>
