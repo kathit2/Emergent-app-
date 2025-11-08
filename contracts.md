@@ -114,10 +114,10 @@ setIsSubmitting(false);
 
 1. ✅ Create MongoDB model for ContactMessage
 2. ✅ Create POST /api/contact endpoint with validation
-3. ⏳ Email integration (pending user decision)
+3. ✅ User chose database-only storage (no email for now)
 4. ✅ Update frontend to call real API
-5. ✅ Test end-to-end flow
-6. ✅ Error handling and user feedback
+5. ⏳ Test end-to-end flow (in progress)
+6. ✅ Error handling and user feedback implemented
 
 ---
 
