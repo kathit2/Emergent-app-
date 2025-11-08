@@ -124,17 +124,13 @@ export const mockProjects = [
 
 export const mockQualifications = [
   {
-    title: 'UKSCA Accredited Strength & Conditioning Coach',
+    title: 'UKSCA Accredited Strength & Conditioning Trainer',
     institution: 'UK Strength and Conditioning Association'
   },
   {
     title: 'BSc in Strength & Conditioning',
     institution: 'Setanta College',
     status: 'Pursuing'
-  },
-  {
-    title: 'Sports Scientist',
-    institution: 'Acrophase Human Performance Lab, IIT Madras'
   }
 ];
 
