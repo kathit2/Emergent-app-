@@ -153,7 +153,7 @@ export const mockSpecializations = [
   {
     icon: React.createElement(BarChart3, { size: 24 }),
     title: 'Performance Analytics',
-    description: 'Bridging physiology with performance analytics'
+    description: 'Using data to measure, understand, and improve performance'
   },
   {
     icon: React.createElement(Brain, { size: 24 }),
