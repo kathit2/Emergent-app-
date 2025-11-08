@@ -122,10 +122,38 @@ const Home = () => {
               </p>
             </div>
             <div className="bg-[#1a1a1a] p-8 rounded-xl border border-gray-800 hover:border-[#00D9FF] transition-all">
-              <h3 className="text-2xl font-semibold mb-4 text-[#00D9FF]">Current Role</h3>
+              <h3 className="text-2xl font-semibold mb-4 text-[#00D9FF]">Approach</h3>
               <p className="text-gray-300 leading-relaxed">
-                As a Sports Scientist at Acrophase Human Performance Lab at IIT Madras, I bridge the gap between physiology and performance analytics. I create actionable dashboards, analyze GPS and heart rate data, and explore machine learning applications for injury prediction and adaptation modeling.
+                My work bridges the gap between physiology and performance analytics. I create actionable dashboards, analyze GPS and heart rate data, and explore machine learning applications for injury prediction and adaptation modeling, bringing scientific rigor to athletic development.
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* IIT Madras Section - Highlight */}
+      <section className="py-20 bg-[#0f1419] fade-in-section">
+        <div className="container mx-auto px-6">
+          <div className="max-w-5xl mx-auto">
+            <div className="bg-gradient-to-r from-[#FF6B35]/10 to-[#00D9FF]/10 p-12 rounded-2xl border border-[#FF6B35]/30 hover:border-[#FF6B35]/60 transition-all">
+              <div className="flex flex-col md:flex-row items-center gap-8">
+                <div className="flex-shrink-0">
+                  <div className="w-24 h-24 bg-[#FF6B35] rounded-full flex items-center justify-center">
+                    <Activity className="text-white" size={48} />
+                  </div>
+                </div>
+                <div className="flex-1 text-center md:text-left">
+                  <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                    Sports Scientist at <span className="text-[#FF6B35]">IIT Madras</span>
+                  </h2>
+                  <p className="text-xl text-gray-300 mb-4">
+                    Acrophase Human Performance Lab
+                  </p>
+                  <p className="text-gray-400 leading-relaxed">
+                    Working at the intersection of sports science and data analytics at one of India's premier research institutions. Focusing on human performance optimization through advanced data analysis, athlete monitoring systems, and machine learning applications.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
