@@ -308,7 +308,7 @@ const Home = () => {
       <footer className="py-8 border-t border-gray-800">
         <div className="container mx-auto px-6 text-center text-gray-400">
           <p>&copy; 2025 Kathit Sondhi. All rights reserved.</p>
-          <p className="text-sm mt-2">Sports Scientist | UKSCA Accredited S&C Coach</p>
+          <p className="text-sm mt-2">Sports Scientist | UKSCA Accredited S&C Trainer</p>
         </div>
       </footer>
     </div>
