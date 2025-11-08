@@ -6,6 +6,7 @@ import { Button } from '../components/ui/button';
 import { Input } from '../components/ui/input';
 import { Textarea } from '../components/ui/textarea';
 import { toast } from '../hooks/use-toast';
+import axios from 'axios';
 
 const Home = () => {
   const [expandedProject, setExpandedProject] = useState(null);
