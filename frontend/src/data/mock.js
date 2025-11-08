@@ -168,12 +168,7 @@ export const mockSpecializations = [
 ];
 
 export const mockTools = [
-  'Python',
-  'Pandas',
-  'Matplotlib',
-  'Seaborn',
-  'NumPy',
-  'Google Colab',
+  'Python (Pandas, Matplotlib, Seaborn, NumPy)',
   'AI/ML Integration',
   'Statistical Analysis',
   'GPS Analysis',
