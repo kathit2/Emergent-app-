@@ -49,7 +49,7 @@ class ContactMessage(BaseModel):
 
 class ContactMessageCreate(BaseModel):
     name: str = Field(..., min_length=2)
-    email: str = Field(...)
+    email: EmailStr = Field(...)
     message: str = Field(..., min_length=10)
 
 # Add your routes to the router instead of directly to app
