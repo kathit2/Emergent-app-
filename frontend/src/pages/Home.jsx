@@ -54,9 +54,20 @@ const Home = () => {
         setFormData({ name: '', email: '', message: '' });
       }
     } catch (error) {
+      let errorMessage = "Failed to send message. Please try again.";
+      
+      if (error.response?.data?.detail) {
+        if (typeof error.response.data.detail === 'string') {
+          errorMessage = error.response.data.detail;
+        } else if (Array.isArray(error.response.data.detail)) {
+          // Handle FastAPI validation errors
+          errorMessage = error.response.data.detail.map(err => err.msg).join(', ');
+        }
+      }
+      
       toast({
         title: "Error",
-        description: error.response?.data?.detail || "Failed to send message. Please try again.",
+        description: errorMessage,
         variant: "destructive",
       });
     } finally {
