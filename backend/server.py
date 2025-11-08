@@ -81,6 +81,40 @@ async def get_status_checks():
     
     return status_checks
 
+@api_router.post("/contact")
+async def create_contact_message(contact: ContactMessageCreate):
+    try:
+        # Create contact message object
+        contact_dict = contact.dict()
+        contact_obj = ContactMessage(**contact_dict)
+        
+        # Insert into database
+        result = await db.contact_messages.insert_one(contact_obj.dict())
+        
+        if result.inserted_id:
+            logger.info(f"Contact message received from {contact.email}")
+            return {
+                "success": True,
+                "message": "Message sent successfully! I'll get back to you soon.",
+                "id": contact_obj.id
+            }
+        else:
+            raise HTTPException(status_code=500, detail="Failed to save message")
+            
+    except Exception as e:
+        logger.error(f"Error saving contact message: {str(e)}")
+        raise HTTPException(status_code=500, detail="Failed to send message. Please try again.")
+
+@api_router.get("/contact", response_model=List[ContactMessage])
+async def get_contact_messages():
+    """Get all contact messages (for admin use)"""
+    try:
+        messages = await db.contact_messages.find().sort("created_at", -1).to_list(1000)
+        return [ContactMessage(**msg) for msg in messages]
+    except Exception as e:
+        logger.error(f"Error fetching contact messages: {str(e)}")
+        raise HTTPException(status_code=500, detail="Failed to fetch messages")
+
 # Include the router in the main app
 app.include_router(api_router)
 
